@@ -1,0 +1,18 @@
+/* Глобальные стили */
+* {
+    background-color: #1E1E1E;
+    background-image: url(image/background.png);
+    background-size: cover;
+    background-blend-mode: color-dodge;
+    /*  это позволяет плавно смешивать цвета фона с изображением */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html a {
+    text-decoration: none;
+}
+

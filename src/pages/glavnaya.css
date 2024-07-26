@@ -1,0 +1,82 @@
+a {
+    text-decoration: none;
+}
+.text-main {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    max-width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.text-main h1 {
+    display: inline;
+    text-align: center;
+    font-size: 40px;
+}
+
+.text-main h2 {
+    display: inline;
+    text-align: center;
+    font-size: 30px;
+}
+
+.btn-menu {
+    display: inline-flex;
+    align-items: center;
+    background-color: #FF9900;
+    color: black;
+    border: none;
+    padding: 10px 100px;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.btn-menu::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../image/arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: translateY(-50%);
+}
+
+
+@media (max-width: 600px) {
+    .text-main {
+        margin-top: 10%;
+        max-width: 100%;
+    }
+
+    .text-main h1 {
+        font-size: 30px;
+    }
+
+    .text-main h2 {
+        font-size: 25px;
+    }
+
+    .btn-menu {
+        padding: 10px 50px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .btn-menu::before {
+        width: 15px;
+        height: 15px;
+    }
+}

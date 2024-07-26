@@ -1,0 +1,91 @@
+/* Стили логотипа */
+.logo {
+    display: flex;
+    gap: 15px;
+    color: #ADADAD;
+    font-size: 8px;
+    align-items: center;
+    width: 200px;
+}
+
+.logo img {
+    width: 120px;
+    pointer-events: none;
+    user-select: none;
+}
+
+
+.personalAccount a {
+    border-radius: 30px;
+    padding: 12px 40px;
+    border: 3.5px solid #FF9900;
+    border-color: #FF9900;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+}
+
+/* Стили заголовка */
+header {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+menu {
+    display: flex;
+    gap: 10px;
+    margin: 20px 50px 50px 150px;
+    align-items: center;
+}
+
+menu a {
+    margin-right: 10px;
+    position: relative;
+    color: gray;
+    padding: 0 10px;
+
+}
+
+menu a.active {
+    color: orange;
+    /* Цвет активной кнопки */
+}
+
+menu a:hover {
+    color: orange;
+    /* Цвет при наведении на кнопку */
+}
+
+menu a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    width: 1px;
+    height: 20px;
+    background-color: gray;
+    transform: translateY(-50%);
+}
+
+menu a:last-child::before {
+    display: none;
+    /* Скрываем полоску после последней кнопки */
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .menu a {
+        margin-right: 0;
+    }
+
+    .personal-account {
+        display: none;
+    }
+}

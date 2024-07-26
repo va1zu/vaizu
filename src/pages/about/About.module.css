@@ -1,0 +1,47 @@
+.container {
+    max-width: 1350px;
+    margin: auto;
+}
+
+
+.mainContact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 3% 15%;
+    gap: 3%;
+
+    color: #333;
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.mainContact h1 {
+    color: #FF9900;
+}
+
+.mainContact h6 {
+    margin: 0;
+    color: #FF9900;
+    font-weight: 600;
+}
+
+.mainContact p {
+    margin-bottom: 20px;
+    text-decoration: none;
+
+    color: #666;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.mainContact a {
+    margin-bottom: 20px;
+    text-decoration: none;
+
+    color: #666;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
