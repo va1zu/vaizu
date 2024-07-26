@@ -37,6 +37,121 @@
     border-radius: 30px;
     color: black;
     display: flex;
-    justify-content: flex-end ;
+    justify-content: flex-end;
     gap: 30px;
+}
+
+.forme {
+    margin: 100px 0 40px 0;
+}
+
+.forme h1 {
+    color: white;
+    width: 400px;
+}
+
+.forme p {
+    color: #ADADAD;
+}
+
+.eclipse {
+    border: 1px solid;
+    border-color: #FF9900;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.eclipseText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ADADAD;
+    text-align: center;
+}
+
+.eclipseText h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.eclipseText p {
+    padding: 30px 0 0 0;
+    font-size: 13px;
+    color: #ADADAD;
+    width: 250px;
+}
+
+.eclipseMain {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .hero {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .arrow {
+        padding: 0px 1px 1px 1px;
+    }
+
+    .more {
+        margin: 20px 0 0 0;
+    }
+
+    .more a {
+        padding: 8px 40px;
+        gap: 10px;
+    }
+
+    .forme {
+        margin: 60px 0 40px 0;
+    }
+
+    .forme h1 {
+        font-size: 18px;
+    }
+
+    .forme p {
+        font-size: 12px;
+    }
+
+    .eclipse {
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .eclipseText {
+        flex-direction: column;
+    }
+
+    .eclipseText h1 {
+        font-size: 14px;
+    }
+
+    .eclipseText p {
+        font-size: 10px;
+        padding: 10px 0 0 0;
+    }
+
+    .eclipseMain {
+        flex-direction: column;
+        gap: 20px;
+    }
 }

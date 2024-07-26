@@ -12,7 +12,7 @@ const Header = () => {
   <h1>Личный блог разработанный на React</h1>
   </div>
   <div className={cl.personalAccount}>
-    <NavLink to={"/"}>Личный кабинет</NavLink>
+    <NavLink to={"https://mcserv2847.github.io/"} target='_blank'>Личный кабинет</NavLink>
   </div>
   
 </header>
