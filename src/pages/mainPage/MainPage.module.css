@@ -124,11 +124,6 @@
 
     .container {
         max-width: 720px;
-
         align-items: center;
-    }
-    
-    menu {
-        display: none;
     }
 }
