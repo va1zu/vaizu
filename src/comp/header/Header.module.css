@@ -76,6 +76,10 @@ header {
     display: none;
 }
 
+.personalAccountMobile {
+    display: none;
+}
+
 /* Адаптация под мобильные устройства */
 @media (max-width: 1200px) {
     .personalAccount {
