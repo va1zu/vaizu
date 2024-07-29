@@ -50,7 +50,8 @@ const Index = () => {
         </section>
       </div>
       <div className={cl.sliderNone}>
-      <Slider />
+        <center>
+      <Slider /></center>
       </div>
     </>
   )

@@ -6,7 +6,7 @@
 .hero {
     color: white;
     font-size: 25px;
-    width: 700px;
+    max-width: 700px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -31,6 +31,7 @@
 }
 
 .more a {
+    transition: .5s;
     background-color: #FF9900;
     padding: 10px 60px;
     align-items: center;
@@ -40,6 +41,9 @@
     justify-content: flex-end;
     gap: 30px;
 }
+.more a:hover{
+    transform: translateY(-2px);
+}
 
 .forme {
     margin: 100px 0 40px 0;
@@ -47,7 +51,7 @@
 
 .forme h1 {
     color: white;
-    width: 400px;
+    max-width: 400px;
 }
 
 .forme p {
@@ -99,6 +103,15 @@
 }
 
 @media (max-width: 1200px) {
+    .hero {
+        font-size: 0.8rem;
+        padding: 0 15px;
+    }
+
+    .forme {
+        font-size: 0.8rem;
+        padding: 0 15px;
+    }
 
     .eclipseMain {
         display: none;
@@ -107,5 +120,15 @@
 
     .sliderNone {
         display: block;
+    }
+
+    .container {
+        max-width: 720px;
+
+        align-items: center;
+    }
+    
+    menu {
+        display: none;
     }
 }
