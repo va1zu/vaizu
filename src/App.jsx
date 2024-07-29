@@ -11,6 +11,7 @@ import About from './pages/about/About';
 import MainPage from './pages/mainPage/MainPage'
 import Portfolio from './pages/portfolio/Portfolio';
 import Os from './pages/Osnova';
+
 export const App = () => {
   return (
     <>
@@ -25,6 +26,7 @@ export const App = () => {
           <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
       </BrowserRouter>  
+      
     </>
   )
 }

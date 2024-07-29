@@ -3,6 +3,9 @@ import { NavLink } from 'react-router-dom'
 import logo from '../../image/logo.png'
 import cl from '../mainPage/MainPage.module.css'
 import Header from '../../comp/header/Header'
+import Slider from '../../slider/Slider'
+
+
 
 const Index = () => {
   return (
@@ -45,6 +48,9 @@ const Index = () => {
               </div>
             </div>
         </section>
+      </div>
+      <div className={cl.sliderNone}>
+      <Slider />
       </div>
     </>
   )
