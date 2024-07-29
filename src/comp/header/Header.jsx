@@ -16,9 +16,6 @@ const Header = () => {
         <div className={cl.personalAccount}>
           <NavLink to={"https://mcserv2847.github.io/"} target='_blank'>Личный кабинет</NavLink>
         </div>
-        <div onClick={() => setNav(!nav)} className={cl.mobileMenu}>
-          {nav ? <AiOutlineClose style={{ zIndex: 5 }} size={25} color='white' /> : <AiOutlineMenu size={25} color='white' />}
-        </div>
       </header>
       <div className={nav ? `${cl.menu} ${cl.active}` : cl.menu}>
         <NavLink to={"/"}>Главная</NavLink>
@@ -26,7 +23,11 @@ const Header = () => {
         <NavLink to={"/shop"}>Услуги</NavLink>
         <NavLink to={"/programs"}>Утилиты</NavLink>
         <NavLink to={"/about"}>Контакты</NavLink>
+        <NavLink to={"https://mcserv2847.github.io/"} target='_blank' className={cl.personalAccountMobile}>Личный кабинет</NavLink>
       </div>
+        <div onClick={() => setNav(!nav)} className={cl.mobileMenu}>
+          {nav ? <AiOutlineClose size={25} color='white' /> : <AiOutlineMenu size={25} color='white' />}
+        </div>
     </>
   )
 }

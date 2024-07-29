@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import cl from '../pages/mainPage/MainPage.module.css'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
@@ -11,6 +11,27 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 export default () => {
+    const slideDB = [
+        {
+            id: 1,
+            title: 'Адаптивная верстка',
+            des: 'Ваш лендинг будет корректно отображаться на любых устройствах и разрешениях. Это позволит охватить большую часть аудитории вашего бизнеса. Ни для кого не секрет что сейчас 60-70% пользователей используют смартфоны/планшеты.'
+        },
+        {
+            id: 2,
+            title: 'Быстрая загрузка',
+            des: 'Максимально прорабатываем дизайн лендинга в векторной графике, используем современные форматы изображений SVG, WebP и другие. Добиваемся высоких показателей скорости загрузки по инструментам Google Speed / Яндекс.'
+        },
+        {
+            id: 3,
+            title: 'Я всегда на связи',
+            des: 'Работаем по договору, каждый этап проекта расписывается по чётким срокам, начиная от прототипирования и заканчивая версткой/программированием. Вы можете узнать в любое время на каком этапе работы находится проект.'
+        },
+    ]
+
+    const [slide,setSlide] = useState(slideDB)
+
+
     return (
      <Swiper
       // install Swiper modules
@@ -24,32 +45,16 @@ export default () => {
       onSlideChange={() => console.log('slide change')}
     >
 
-            <SwiperSlide>
+        {slide.map(slide => 
+            <SwiperSlide key={slide.id}>
                 <div className={cl.eclipse}>
                     <div className={cl.eclipseText}>
-                        <h1>Адаптивная верстка</h1>
-                        <p>Ваш лендинг будет корректно отображаться на любых устройствах и разрешениях. Это позволит охватить большую часть аудитории вашего бизнеса. Ни для кого не секрет что сейчас 60-70% пользователей используют смартфоны/планшеты.</p>
-
+                        <h1>{slide.title}</h1>
+                        <p>{slide.des}</p>
                     </div>
                 </div>
             </SwiperSlide>
-            <SwiperSlide>
-                <div className={cl.eclipse}>
-                    <div className={cl.eclipseText}>
-                        <h1>Быстрая загрузка</h1>
-                        <p>Максимально прорабатываем дизайн лендинга в векторной графике, используем современные форматы изображений SVG, WebP и другие. Добиваемся высоких показателей скорости загрузки по инструментам Google Speed / Яндекс.</p>
-
-                    </div>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className={cl.eclipse}>
-                    <div className={cl.eclipseText}>
-                        <h1>Я всегда на связи</h1>
-                        <p>Работаем по договору, каждый этап проекта расписывается по чётким срокам, начиная от прототипирования и заканчивая версткой/программированием. Вы можете узнать в любое время на каком этапе работы находится проект.</p>
-                    </div>
-                </div>
-            </SwiperSlide>
+        )}
         </Swiper>
     );
 };
