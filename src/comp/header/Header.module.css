@@ -130,6 +130,7 @@ header {
     }
 
     .personalAccountMobile {
+        display: flex;
         border: 1px solid orange;
         border-radius: 15px;
     }
