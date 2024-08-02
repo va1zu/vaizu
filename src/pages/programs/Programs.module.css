@@ -2,3 +2,35 @@
     max-width: 1350px;
     margin: auto;
 }
+
+.mainTextTop {
+    color: white;
+    margin-bottom: 40px;
+    
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main img{
+    width: 350px;
+    
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    color: orange;
+    text-align: center;
+    align-items: center;
+    max-width: 400px;
+    gap: 20px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

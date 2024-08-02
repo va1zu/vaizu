@@ -2,3 +2,27 @@
     max-width: 1350px;
     margin: auto;
 }
+
+.mainTextTop {
+    color: white;
+    margin-bottom: 40px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main img{
+    width: 400px;
+    
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    align-items: center;
+    max-width: 400px;
+}

@@ -21,7 +21,7 @@ const Header = () => {
         <NavLink to={"/"}>Главная</NavLink>
         <NavLink to={"/portfolio"}>Портфолио</NavLink>
         <NavLink to={"/shop"}>Услуги</NavLink>
-        <NavLink to={"/programs"}>Утилиты</NavLink>
+         <NavLink to={"/programs"}>Расширение Vs Code</NavLink> 
         <NavLink to={"/about"}>Контакты</NavLink>
         <NavLink to={"https://mcserv2847.github.io/"} target='_blank' className={cl.personalAccountMobile}>Личный кабинет</NavLink>
       </div>

@@ -2,3 +2,34 @@
     max-width: 1350px;
     margin: auto;
 }
+
+.mainTextTop {
+    color: white;
+    margin-bottom: 40px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    align-items: center;
+    max-width: 400px;
+}
+
+.itemText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.item img {
+    width: 400px;
+    height: 400px;  
+}
