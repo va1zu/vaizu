@@ -9,6 +9,8 @@ const Index = () => {
 <div className={cl.container}>
 <Header />
   <h1 className={cl.mainTextTop}>Услуги:</h1>
+  <h1 className={cl.mainTextTop2}>Услуги</h1>
+
 <div className={cl.main}>
 <div className={cl.item}>
     <NavLink to={'/shop/1'} className={cl.itemText}>

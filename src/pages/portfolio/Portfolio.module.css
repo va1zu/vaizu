@@ -26,3 +26,28 @@
     align-items: center;
     max-width: 400px;
 }
+
+.mainTextTop2 {
+    display: none;
+    justify-content: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .mainTextTop {
+ display: none;
+    }
+
+    .mainTextTop2 {
+        display: flex;
+    }
+}
