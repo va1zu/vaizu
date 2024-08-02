@@ -50,12 +50,10 @@ export default () => {
       style={{
         '--swiper-navigation-color': '#FF9900',
         '--swiper-navigation-size': '40px',
-        '--swiper-button-border': 'border: none',
       }}
     >
-        <button className="swiper-button-next swiper-nav-color swiper-button-border"></button>
-        <button className="swiper-button-prev swiper-nav-color swiper-button-border"></button>
-
+        <button className="swiper-button-next swiper-nav-color" style={{border: 'none'}}></button>
+        <button className="swiper-button-prev swiper-nav-color" style={{border: 'none'}}></button>
         {slide.map(slide => 
             <SwiperSlide key={slide.id}>
                 <div className={cl.eclipse}>
