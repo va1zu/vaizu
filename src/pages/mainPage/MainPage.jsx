@@ -53,6 +53,7 @@ const Index = () => {
         <center>
       <Slider /></center>
       </div>
+      
     </>
   )
 }

@@ -4,30 +4,35 @@
 }
 
 
-.mainContact {
+.textContact {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 3% 15%;
+    margin: 5% 15% ;
     gap: 3%;
-
+    justify-content: center;
     color: #333;
     font-size: 2rem;
     line-height: 1.2;
     font-weight: 600;
 }
 
-.mainContact h1 {
+.mainContact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textContact h1 {
     color: #FF9900;
 }
 
-.mainContact h6 {
+.textContact h6 {
     margin: 0;
     color: #FF9900;
     font-weight: 600;
 }
 
-.mainContact p {
+.textContact p {
     margin-bottom: 20px;
     text-decoration: none;
 
@@ -36,12 +41,86 @@
     line-height: 1.5;
 }
 
-.mainContact a {
+.textContact a {
     margin-bottom: 20px;
     text-decoration: none;
-
     color: #666;
     font-size: 1.2rem;
     line-height: 1.5;
 }
 
+.marginB {
+    margin-bottom: 50px;
+}
+
+.danya {
+    display: flex;
+}
+
+.danya img{
+    max-width: 550px;
+    max-height: 550px;
+    border-radius: 50%;
+    border: 1px solid #FF9900;
+    
+}
+
+@media screen and (max-width: 1200px) {
+
+    .textContact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        gap: 3%;
+        justify-content: center;
+        color: #333;
+        font-size: 1.6rem;
+        line-height: 1.2;
+        font-weight: 600;
+    }
+    
+    .danya img{
+        max-width: 300px;
+        max-height: 300px;
+        border-radius: 50%;
+        border: 1px solid #FF9900;
+        
+    }
+    
+    .mainContact {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .textContact h1 {
+        color: #FF9900;
+    }
+    
+    .textContact h6 {
+        margin: 0;
+        color: #FF9900;
+        font-weight: 600;
+    }
+    
+    .textContact p {
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: #666;
+        font-size: 1rem;
+        line-height: 1;
+    }
+    
+    .textContact a {
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: #666;
+        font-size: 1rem;
+        line-height: 1;
+    }
+    
+    .marginB {
+        margin-bottom: 20px;
+    }
+
+}
