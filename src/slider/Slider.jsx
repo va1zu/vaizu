@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import cl from '../pages/mainPage/MainPage.module.css'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import './Slider.module.css'
+import bt from './Slider.module.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 export default () => {
     const slideDB = [
@@ -45,9 +47,14 @@ export default () => {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
       cssMode={true}
+      style={{
+        '--swiper-navigation-color': '#FF9900',
+        '--swiper-navigation-size': '40px',
+        '--swiper-button-border': 'border: none',
+      }}
     >
-        <button className="swiper-button-next swiper-nav-color"></button>
-        <button className="swiper-button-prev swiper-nav-color"></button>
+        <button className="swiper-button-next swiper-nav-color swiper-button-border"></button>
+        <button className="swiper-button-prev swiper-nav-color swiper-button-border"></button>
 
         {slide.map(slide => 
             <SwiperSlide key={slide.id}>
